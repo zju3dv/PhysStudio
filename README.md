@@ -145,7 +145,7 @@ SnowyGS combines [A Material Point Method for Snow Simulation](https://alexey.st
   <img src="media/megas/kitchen.gif" width="960" alt="MeGAS Kitchen: looping official video">
 </p>
 
-[**Project page →**](https://zju3dv.github.io/MeGAS/) · [**GitHub →**](https://github.com/zju3dv/MeGAS)
+[**Code & run guide →**](https://github.com/zju3dv/MeGAS)
 
 <a id="lavags"></a>
 
