@@ -24,7 +24,7 @@ python -m physstudio fetch bread
 python -m physstudio run enlivening bread --gpu 0
 ```
 
-The five methods share Gaussian loading, camera, video, and download helpers;
+The methods share Gaussian loading, camera, video, and download helpers;
 install them together. Each method has its own simulation code and presets.
 Run commands from the repository root. Choose a fresh `--output` for each run.
 
@@ -39,7 +39,9 @@ export PHYSSTUDIO_DATA_ROOT=/path/to/assets
 ```
 
 `--frames` controls saved simulation steps for splashing and magnetism, video
-frames for rain and snow, and the approximate half-speed video length for
+frames for rain, snow and lava, and the approximate half-speed video length for
 locomotion (the initial state adds one frame).
 
 See [VALIDATION.md](VALIDATION.md) for completed checks and validation commands.
+
+Lava scene preparation also uses Node.js 22+ and the pinned PlayCanvas converter; see [LavaGS](lava_gs/README.md).

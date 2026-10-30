@@ -208,5 +208,70 @@
     "duration": "8.000000",
     "nb_frames": "240",
     "sha256": "2143142b442ec340100790f95595edaf95a36d220f22583f48e1df45fa691965"
+  },
+  {
+    "method": "lava_gs",
+    "scene": "zohar",
+    "label": "Zohar canyon",
+    "paper": "https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf",
+    "command": "python -m physstudio run lava zohar --gpu 0",
+    "video": "media/lava_gs/zohar.mp4",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "duration": "8.000000",
+    "nb_frames": "240",
+    "sha256": "db21a2693d8479ebf8a6dfe5a7cc786a6d28594119664645ef1d1b771770e844"
+  },
+  {
+    "method": "lava_gs",
+    "scene": "lands_end",
+    "label": "Land's End cliff",
+    "paper": "https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf",
+    "command": "python -m physstudio run lava lands_end --gpu 0",
+    "video": "media/lava_gs/lands_end.mp4",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "duration": "8.000000",
+    "nb_frames": "240",
+    "sha256": "9c2e6b2d4c60166692aab63021b6afcf093b6223ea07a4b82c84e0f33592f6ad"
+  },
+  {
+    "method": "lava_gs",
+    "scene": "calico",
+    "label": "Calico",
+    "paper": "https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf",
+    "command": "python -m physstudio run lava calico --gpu 0",
+    "video": "media/lava_gs/calico.mp4",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "duration": "5.033333",
+    "nb_frames": "151",
+    "sha256": "748ae883b0a1212d0e2ffa88365858f830df90ec5feb9629da6163fa63a50f65"
+  },
+  {
+    "method": "megas",
+    "scene": "kitchen",
+    "label": "Kitchen",
+    "paper": "https://zju3dv.github.io/MeGAS/",
+    "source_url": "https://zju3dv.github.io/MeGAS/sources/videos/Exp/Scene-Demo/Kitchen.mp4",
+    "github": "https://github.com/zju3dv/MeGAS",
+    "video": "media/megas/kitchen.mp4",
+    "width": 1280,
+    "height": 720,
+    "r_frame_rate": "30/1",
+    "duration": "2.066667",
+    "nb_frames": "62",
+    "sha256": "a22d5557deb04ec279545b6e5ecc649b2d71aa3948ce74edf078a73276a0149d",
+    "preview": {
+      "format": "gif",
+      "width": 960,
+      "height": 540,
+      "fps": 15,
+      "loop": 0,
+      "layout": "full frame"
+    }
   }
 ]

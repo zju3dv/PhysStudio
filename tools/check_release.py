@@ -25,7 +25,9 @@ def main():
         if p.suffix == ".py":
             ast.parse(text, filename=str(p))
             if p.name != "check_release.py":
-                assert "/mnt/" not in text and "experiments." not in text, str(p)
+                assert all(
+                    s not in text for s in ["/mnt/", "experiments.", "experiments/"]
+                ), str(p)
         if p.suffix in {".md", ".html"}:
             links = re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", text)
             links += re.findall(r'(?:href|src)="([^"{}]+)"', text)
@@ -36,7 +38,8 @@ def main():
                 assert (p.parent / target).exists(), (str(p), target)
         checked += 1
     videos = json.loads((ROOT / "media/manifest.json").read_text())
-    assert len(videos) == 15
+    assert videos
+    assert len({entry["video"] for entry in videos}) == len(videos)
     counts = {}
     for entry in videos:
         p = ROOT / entry["video"]
@@ -65,7 +68,7 @@ def main():
         assert p.with_suffix(".gif").stat().st_size > 0
         assert p.with_suffix(".jpg").stat().st_size > 0
         counts[entry["method"]] = counts.get(entry["method"], 0) + 1
-    assert len(counts) == 5 and all(n == 3 for n in counts.values())
+    assert all(n == (1 if method == "megas" else 3) for method, n in counts.items())
     print(
         json.dumps(
             dict(passed=True, text_files=checked, videos=len(videos), methods=counts),

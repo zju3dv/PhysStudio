@@ -10,7 +10,8 @@ Runtime dependencies are installed separately: [PyTorch](https://pytorch.org/),
 Video encoding uses [FFmpeg](https://ffmpeg.org/).
 
 Pretrained scene and object models come from FieryGS, Graphdeco, Voxel51,
-and PhysGaussian; [ASSETS.md](ASSETS.md) links each download and source.
+PhysGaussian, and the SuperSplat authors credited in the LavaGS presets; [ASSETS.md](ASSETS.md) links each download and source.
 Models, camera archives, paper PDFs, and third-party binary packages are not
-included in this repository. The demo videos are rendered by PhysStudio using
-those publicly released assets.
+included in this repository. The implementation demos are rendered by PhysStudio using those publicly released assets.
+
+The MeGAS showcase uses the official Kitchen video from the [MeGAS project page](https://zju3dv.github.io/MeGAS/). The README plays a full-frame animated loop, and the video gallery autoplays the original MP4. The source URL and hash are recorded in `media/manifest.json`. [MeGAS code](https://github.com/zju3dv/MeGAS).

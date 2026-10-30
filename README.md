@@ -9,7 +9,8 @@
 ![3DGS](https://img.shields.io/badge/3D-Gaussian_Splatting-a78bfa?style=flat-square)
 ![Vibe Coding](https://img.shields.io/badge/Made_with-Vibe_Coding-22d3ee?style=flat-square)
 
-[Rain](#rainygs) · [Splashing](#gaussian-splashing) · [Locomotion](#enliveninggs) · [Magnetism](#magnetic-mpm) · [Snow](#snowygs) · [DiffWind](#diffwind) · [PhysSkin](#physskin)
+[RainyGS](#rainygs) · [Gaussian Splashing](#gaussian-splashing) · [EnliveningGS](#enliveninggs) · [Magnetic MPM](#magnetic-mpm) · [SnowyGS](#snowygs)<br>
+[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags)
 
 [**Get started**](INSTALL.md) &nbsp; / &nbsp; [**Download assets**](ASSETS.md) &nbsp; / &nbsp; [**Video gallery**](media/index.html)
 
@@ -133,6 +134,35 @@ SnowyGS combines [A Material Point Method for Snow Simulation](https://alexey.st
 
 [**Code & run guide →**](https://github.com/zju3dv/PhysSkin)
 
+<a id="megas"></a>
+
+## MeGAS
+
+[MeGAS](https://zju3dv.github.io/MeGAS/) brings temperature fields and thermomechanical phase transitions to Gaussian scenes for melting and solidification.
+
+<p align="center">
+  <b>Kitchen</b><br>
+  <img src="media/megas/kitchen.gif" width="960" alt="MeGAS Kitchen: looping official video">
+</p>
+
+[**Project page →**](https://zju3dv.github.io/MeGAS/) · [**GitHub →**](https://github.com/zju3dv/MeGAS)
+
+<a id="lavags"></a>
+
+## LavaGS
+
+Inspired by [Augmented MPM for Phase-Change and Varied Materials](https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf), LavaGS sends hot lava over Gaussian terrain with flowing crust, rock contact, and thermal emission.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%"><a href="media/lava_gs/zohar.mp4"><img src="media/lava_gs/zohar.gif" width="360" alt="Zohar canyon demo"></a><br><b>Zohar canyon</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/lava_gs/lands_end.mp4"><img src="media/lava_gs/lands_end.gif" width="360" alt="Land's End cliff demo"></a><br><b>Land's End cliff</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/lava_gs/calico.mp4"><img src="media/lava_gs/calico.gif" width="360" alt="Calico demo"></a><br><b>Calico</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](lava_gs/README.md)
+
 ---
 
 ## Run a demo
@@ -158,6 +188,7 @@ gaussian_splashing/   Position-based fluids and Gaussian liquid rendering
 enlivening_gs/        Muscle-driven FEM and Gaussian deformation
 magnetic_mpm/        Nonlinear magnetic fields coupled to MLS-MPM
 snowy_gs/             Elastoplastic snow, airborne flakes, and accumulation
+lava_gs/              Thermoviscoplastic lava, rock contact, and thermal emission
 physstudio/           Shared launcher, paths, and download utilities
 media/                Demo videos, animated previews, and an HTML gallery
 ```

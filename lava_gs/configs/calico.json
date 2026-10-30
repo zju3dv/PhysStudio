@@ -1,0 +1,112 @@
+{
+  "world_transform": [
+    [
+      0.6529211059934713,
+      0.0,
+      -0.7574259233405352,
+      -4.69154636022282
+    ],
+    [
+      0.7574259233405352,
+      0.0,
+      0.6529211059934713,
+      3.545370721105557
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      -0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ground_plane": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "viewer_eye": [
+    0.0,
+    -1.9694731916412596,
+    2.3263051509857178
+  ],
+  "viewer_target": [
+    0.0,
+    0.0,
+    1.9782026554382262
+  ],
+  "source": "Calico Basin at sunrise, Red Rock Canyon, Las Vegas NV by tosolini",
+  "source_url": "https://superspl.at/scene/5d517144",
+  "license": "CC BY 4.0",
+  "far_plane": 100000.0,
+  "lava_camera": {
+    "target": [
+      1.55,
+      -0.25,
+      2.25
+    ],
+    "target_offset": [
+      -0.2,
+      0.12,
+      -0.1
+    ],
+    "fov": 42.0,
+    "orbit": {
+      "azimuth_start": -115.0,
+      "azimuth_end": -195.0,
+      "radius_start": 3.2,
+      "radius_end": 2.5,
+      "height_start": 1.6,
+      "height_end": 1.0
+    }
+  },
+  "lava_defaults": {
+    "frames": 151,
+    "fps": 30,
+    "warmup": 0.8,
+    "seed": 17,
+    "dx": 0.12,
+    "inlet_speed": 0.65,
+    "inlet_width": 1.0,
+    "inlet_thickness": 0.6,
+    "eta": 3000.0,
+    "yield_hot": 3500.0,
+    "bulk": 1200000.0,
+    "volume_relaxation": 0.02,
+    "inlet_x": 1.8,
+    "inlet_y": -0.6,
+    "inlet_heading": 160.0,
+    "inlet_profile": "ellipse",
+    "inlet_conform": true,
+    "friction": 0.12,
+    "exchange": 20.0,
+    "crust": 1.25,
+    "surface_iso": 0.12,
+    "exposure": 0.85,
+    "camera_pitch": 0.0,
+    "camera_end": 0.35,
+    "camera_path": "cascade"
+  },
+  "sky": {
+    "zenith": [
+      0.28,
+      0.52,
+      0.82
+    ],
+    "horizon": [
+      0.82,
+      0.81,
+      0.77
+    ],
+    "sun_direction": [
+      -0.6,
+      1.0,
+      0.05
+    ]
+  }
+}

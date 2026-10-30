@@ -1,0 +1,13 @@
+{
+  "target": [1.55, -0.25, 2.25],
+  "target_offset": [-0.2, 0.12, -0.1],
+  "fov": 42.0,
+  "orbit": {
+    "azimuth_start": -115.0,
+    "azimuth_end": -195.0,
+    "radius_start": 3.2,
+    "radius_end": 2.5,
+    "height_start": 1.6,
+    "height_end": 1.0
+  }
+}

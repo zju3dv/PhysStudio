@@ -1,0 +1,8 @@
+{
+  "title": "Zohar Riverbad, Dead sea, Israel",
+  "author": "barak9177",
+  "source_url": "https://superspl.at/scene/7aa4d3d4",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "changes": "LOD 0 decoded to PLY; coordinate calibration, generated cameras and lava added for this demo."
+}

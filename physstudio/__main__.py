@@ -17,6 +17,7 @@ SCENES = {
     "enlivening": ("bread", "wolf", "vasedeck"),
     "magnetic": ("ferrofluid", "magnetic_bread", "magnetic_wolf"),
     "snow": ("playground", "firewoods", "train"),
+    "lava": ("zohar", "lands_end", "calico"),
 }
 
 
@@ -122,6 +123,19 @@ def plan(args):
                 str(out),
             ],
         ]
+    if args.method == "lava":
+        return [
+            command(
+                "lava_gs.demo",
+                scene=args.scene,
+                output=out,
+                frames=args.frames,
+                width=args.width,
+                cache_states=True,
+                save_frames=True,
+            ),
+            [sys.executable, "-m", "lava_gs.audit", str(out)],
+        ]
     opts = dict(
         scene=args.scene,
         output=out,
@@ -174,13 +188,26 @@ def main():
             "bread",
             "wolf",
             "vasedeck",
+            "zohar",
+            "lands_end",
+            "calico",
             "all",
         ),
     )
     args = parser.parse_args()
     if args.action == "fetch":
         assets = (
-            ("playground", "firewoods", "train", "bread", "wolf", "vasedeck")
+            (
+                "playground",
+                "firewoods",
+                "train",
+                "bread",
+                "wolf",
+                "vasedeck",
+                "zohar",
+                "lands_end",
+                "calico",
+            )
             if args.asset == "all"
             else (args.asset,)
         )
@@ -191,6 +218,8 @@ def main():
                 cmd = command(
                     "rainy_gs.fetch_graphdeco", scene="train", provider="voxel51"
                 )
+            elif asset in ("zohar", "lands_end", "calico"):
+                cmd = command("lava_gs.fetch", scene=asset)
             else:
                 cmd = command("gaussian_splashing.fetch", model=asset)
             subprocess.run(cmd, cwd=ROOT, check=True)
