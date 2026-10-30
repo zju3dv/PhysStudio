@@ -1,6 +1,6 @@
 # LavaGS · lava cascades in Gaussian scenes
 
-Inspired by [Augmented MPM for Phase-Change and Varied Materials](https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf), LavaGS combines thermoviscoplastic MPM, rock contact, and temperature-driven emission to animate lava through reconstructed Gaussian environments.
+LavaGS combines [Augmented MPM for Phase-Change and Varied Materials](https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf) with Gaussian scenes for lava flow, crust formation, rock contact, and thermal emission.
 
 ## Run
 

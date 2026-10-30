@@ -18,6 +18,7 @@ SCENES = {
     "magnetic": ("ferrofluid", "magnetic_bread", "magnetic_wolf"),
     "snow": ("playground", "firewoods", "train"),
     "lava": ("zohar", "lands_end", "calico"),
+    "water_sand": ("castle", "sediment", "breach"),
 }
 
 
@@ -122,6 +123,16 @@ def plan(args):
                 "--input",
                 str(out),
             ],
+        ]
+    if args.method == "water_sand":
+        return [
+            command(
+                "water_sand.demo",
+                scenes=[args.scene],
+                output=out,
+                frames=args.frames,
+                width=args.width,
+            )
         ]
     if args.method == "lava":
         return [

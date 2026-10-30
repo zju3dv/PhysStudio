@@ -1,0 +1,14 @@
+{
+  "lbm_mpm_air_water_sand": {
+    "commit": "e148c285179032bdee9d8fc8d386911847441864",
+    "url": "https://github.com/DacianShaw/LBM-MPM-Air-Water-Sand.git"
+  },
+  "OpenHOMELBM": {
+    "commit": "8eae698a24e4ec51ce74a0747a624fabd0396e7d",
+    "url": "https://github.com/kuiwuchn/OpenHOMELBM.git"
+  },
+  "paper": {
+    "url": "https://lwkobe.github.io/papers/XWYDL2026/",
+    "pdf_sha256": "bdfc37d1b52647a6a5fee6e830b29bf06f365177a528824f400a817a73688a3e"
+  }
+}

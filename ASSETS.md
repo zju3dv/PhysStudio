@@ -48,3 +48,5 @@ data/
 Downloaded models and source data retain their upstream licenses and attribution.
 
 Lava downloads use SuperSplat viewer manifests and the [PlayCanvas converter](https://github.com/playcanvas/splat-transform). Install the converter as described in [LavaGS](lava_gs/README.md). The selected LODs contain 2,999,888, 1,608,479, and 3,534,225 Gaussians respectively. Each prepared scene includes its source URL, author, CC BY 4.0 attribution, cameras, and downloaded-file hashes.
+
+Water + Sand generates its scene geometry, materials, and particles procedurally.

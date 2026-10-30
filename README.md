@@ -10,7 +10,7 @@
 ![Vibe Coding](https://img.shields.io/badge/Made_with-Vibe_Coding-22d3ee?style=flat-square)
 
 [RainyGS](#rainygs) · [Gaussian Splashing](#gaussian-splashing) · [EnliveningGS](#enliveninggs) · [Magnetic MPM](#magnetic-mpm) · [SnowyGS](#snowygs)<br>
-[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags)
+[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags) · [Water + Sand](#water-sand)
 
 [**Get started**](INSTALL.md) &nbsp; / &nbsp; [**Download assets**](ASSETS.md) &nbsp; / &nbsp; [**Video gallery**](media/index.html)
 
@@ -151,7 +151,7 @@ SnowyGS combines [A Material Point Method for Snow Simulation](https://alexey.st
 
 ## LavaGS
 
-Inspired by [Augmented MPM for Phase-Change and Varied Materials](https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf), LavaGS sends hot lava over Gaussian terrain with flowing crust, rock contact, and thermal emission.
+LavaGS combines [Augmented MPM for Phase-Change and Varied Materials](https://www.cs.ucr.edu/~craigs/papers/2014-melting/paper.pdf) with Gaussian scenes for lava flow, crust formation, rock contact, and thermal emission.
 
 <table>
   <tr>
@@ -162,6 +162,22 @@ Inspired by [Augmented MPM for Phase-Change and Varied Materials](https://www.cs
 </table>
 
 [**Code & run guide →**](lava_gs/README.md)
+
+<a id="water-sand"></a>
+
+## Water + Sand
+
+Water + Sand combines [Volume-Preserving LBM-MPM Coupling for Air-Water-Sand Mixtures](https://lwkobe.github.io/papers/XWYDL2026/) with Gaussian rendering for 3D sandcastle erosion, sedimentation, and dam overtopping.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%"><a href="media/water_sand/breach.mp4"><img src="media/water_sand/breach.gif" width="360" alt="Sand dam overtopping demo"></a><br><b>Sand dam</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/water_sand/sediment.mp4"><img src="media/water_sand/sediment.gif" width="360" alt="Colored sand sedimentation demo"></a><br><b>Sedimentation</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/water_sand/castle.mp4"><img src="media/water_sand/castle.gif" width="360" alt="Sandcastle erosion demo"></a><br><b>Sandcastle</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](water_sand/README.md)
 
 ---
 
@@ -189,6 +205,7 @@ enlivening_gs/        Muscle-driven FEM and Gaussian deformation
 magnetic_mpm/        Nonlinear magnetic fields coupled to MLS-MPM
 snowy_gs/             Elastoplastic snow, airborne flakes, and accumulation
 lava_gs/              Thermoviscoplastic lava, rock contact, and thermal emission
+water_sand/           Air–water LBM, granular MPM, and Gaussian grains
 physstudio/           Shared launcher, paths, and download utilities
 media/                Demo videos, animated previews, and an HTML gallery
 ```

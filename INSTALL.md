@@ -39,9 +39,15 @@ export PHYSSTUDIO_DATA_ROOT=/path/to/assets
 ```
 
 `--frames` controls saved simulation steps for splashing and magnetism, video
-frames for rain, snow and lava, and the approximate half-speed video length for
+frames for rain, snow, lava, and water–sand, and the approximate half-speed video length for
 locomotion (the initial state adds one frame).
 
 See [VALIDATION.md](VALIDATION.md) for completed checks and validation commands.
 
 Lava scene preparation also uses Node.js 22+ and the pinned PlayCanvas converter; see [LavaGS](lava_gs/README.md).
+
+Water + Sand uses procedural scenes and the same installed dependencies:
+
+```bash
+python -m physstudio run water_sand castle --gpu 0
+```

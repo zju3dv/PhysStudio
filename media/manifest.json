@@ -273,5 +273,47 @@
       "loop": 0,
       "layout": "full frame"
     }
+  },
+  {
+    "method": "water_sand",
+    "scene": "castle",
+    "label": "Sandcastle",
+    "paper": "https://lwkobe.github.io/papers/XWYDL2026/",
+    "video": "media/water_sand/castle.mp4",
+    "command": "python -m physstudio run water_sand castle --gpu 0",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "duration": "6.000000",
+    "nb_frames": "180",
+    "sha256": "c6126cad63331b4ab1834d4dbc8e37e3be1d6a41a9b1e202a6b59a19e81d6a08"
+  },
+  {
+    "method": "water_sand",
+    "scene": "sediment",
+    "label": "Sedimentation",
+    "paper": "https://lwkobe.github.io/papers/XWYDL2026/",
+    "video": "media/water_sand/sediment.mp4",
+    "command": "python -m physstudio run water_sand sediment --gpu 0",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "duration": "6.000000",
+    "nb_frames": "180",
+    "sha256": "7a90f7e5aefc4ad59d2bddf19263cea649d0fe48912fc5e90248b89e43f8b513"
+  },
+  {
+    "method": "water_sand",
+    "scene": "breach",
+    "label": "Sand dam",
+    "paper": "https://lwkobe.github.io/papers/XWYDL2026/",
+    "video": "media/water_sand/breach.mp4",
+    "command": "python -m physstudio run water_sand breach --gpu 0",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "duration": "6.000000",
+    "nb_frames": "180",
+    "sha256": "82f4efc4170451bcc947b9f3f5f65d6b911e9330f8e481d711c398e2b432524a"
   }
 ]

@@ -1,6 +1,6 @@
 # Credits
 
-PhysStudio contains our independent implementations and demo workflows inspired
+PhysStudio contains physics-based implementations and demo workflows inspired
 by the papers linked in each method's README.
 
 Runtime dependencies are installed separately: [PyTorch](https://pytorch.org/),
@@ -15,3 +15,10 @@ Models, camera archives, paper PDFs, and third-party binary packages are not
 included in this repository. The implementation demos are rendered by PhysStudio using those publicly released assets.
 
 The MeGAS showcase uses the official Kitchen video from the [MeGAS project page](https://zju3dv.github.io/MeGAS/). The README plays a full-frame animated loop, and the video gallery autoplays the original MP4. The source URL and hash are recorded in `media/manifest.json`. [MeGAS code](https://github.com/zju3dv/MeGAS).
+
+Water + Sand adapts constitutive and coupling routines from the
+[released 2D LBM–MPM implementation](https://github.com/DacianShaw/LBM-MPM-Air-Water-Sand)
+by Xiaoyu Xiao; its [MIT notice](water_sand/LICENSE.reference) is included.
+[OpenHOMELBM](https://github.com/kuiwuchn/OpenHOMELBM) provides the 3D Warp LBM
+organization reference. Pinned revisions are in
+[water_sand/references/sources.json](water_sand/references/sources.json).

@@ -11,10 +11,11 @@ listed in [INSTALL.md](INSTALL.md).
 | Magnetism | Nonlinear field solve and discrete operators; Gaussian binding; simulation, rendering, trajectory audit |
 | Snow | Free fall, plasticity, friction, deposition; depth rendering; simulation, rendering, mass/contact audit |
 | Lava | Free fall, mass and heat balance, rheology, impact; all three scene simulations, rendering, and replay audits |
-| Launcher | All 18 presets; existing 15 command plans unchanged |
+| Water + Sand | All three pipelines; conservation, porous equilibrium, resolution-scaled drag, grain attachment, and same-state rendering |
+| Launcher | All 21 presets; existing 18 command plans unchanged |
 | Downloads | ZIP extraction, CRC-checked cache, destination confinement; SuperSplat manifest, conversion, and camera setup |
-| Media | All 19 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
-| Package | Wheel built with LavaGS modules and scene configurations |
+| Media | All 22 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
+| Package | Wheel built with LavaGS and Water + Sand modules, configurations, and reference attribution |
 | Source | Python syntax, English text, portable paths, local documentation links |
 
 Each end-to-end pipeline check used two simulation/video steps. The Playground
@@ -32,3 +33,10 @@ python tools/check_release.py
 ```
 
 The method READMEs list their numerical and GPU validation commands.
+
+Thirteen Water + Sand solver, rendering, and validation modules match the
+development version after import-path normalization and formatting. Shared
+camera, video, and sampling helpers also match. Each of its three presets
+completed a two-frame simulation, Gaussian render, and video audit at the full
+128 × 84 × 75 simulation resolution. Same-state rendering was compared at
+1280 × 800. The showcase contains the completed 180-frame trajectories.
