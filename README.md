@@ -1,0 +1,165 @@
+<div align="center">
+
+<img src="media/physstudio-physics-lab.svg" alt="PhysStudio — A Vibe-Coded Physics Lab" width="100%">
+
+**Recreating fun physics-based animation projects through vibe coding.**
+
+![Python](https://img.shields.io/badge/Python-3.10-60a5fa?style=flat-square&logo=python&logoColor=white)
+![Warp](https://img.shields.io/badge/NVIDIA-Warp_1.6-76b900?style=flat-square&logo=nvidia&logoColor=white)
+![3DGS](https://img.shields.io/badge/3D-Gaussian_Splatting-a78bfa?style=flat-square)
+![Vibe Coding](https://img.shields.io/badge/Made_with-Vibe_Coding-22d3ee?style=flat-square)
+
+[Rain](#rainygs) · [Splashing](#gaussian-splashing) · [Locomotion](#enliveninggs) · [Magnetism](#magnetic-mpm) · [Snow](#snowygs) · [DiffWind](#diffwind) · [PhysSkin](#physskin)
+
+[**Get started**](INSTALL.md) &nbsp; / &nbsp; [**Download assets**](ASSETS.md) &nbsp; / &nbsp; [**Video gallery**](media/index.html)
+
+</div>
+
+---
+
+A growing collection of physics-based animation projects, from solvers to
+rendered demos. Explore the code and run guides, or click an animated preview
+to watch the full video.
+
+<a id="rainygs"></a>
+
+## RainyGS
+
+[RainyGS](https://pku-vcl-geometry.github.io/RainyGS/) synthesizes rain, splashes, and water effects in Gaussian scenes.
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="media/rainy_gs/playground.mp4"><img src="media/rainy_gs/playground.gif" width="360" alt="Playground moving-camera demo"></a><br><b>Playground</b></td>
+    <td align="center" width="33%"><a href="media/rainy_gs/firewoods.mp4"><img src="media/rainy_gs/firewoods.gif" width="360" alt="Firewoods moving-camera demo"></a><br><b>Firewoods</b></td>
+    <td align="center" width="33%"><a href="media/rainy_gs/train.mp4"><img src="media/rainy_gs/train.gif" width="360" alt="Train moving-camera demo"></a><br><b>Train</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](rainy_gs/README.md)
+
+<a id="gaussian-splashing"></a>
+
+## Gaussian Splashing
+
+[Gaussian Splashing](https://gaussiansplashing.github.io/) unifies particles for fluid and solid motion synthesis and Gaussian rendering.
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="media/gaussian_splashing/liquify.mp4"><img src="media/gaussian_splashing/liquify.gif" width="360" alt="Liquefy moving-camera demo"></a><br><b>Liquefy</b></td>
+    <td align="center" width="33%"><a href="media/gaussian_splashing/wave.mp4"><img src="media/gaussian_splashing/wave.gif" width="360" alt="Wave moving-camera demo"></a><br><b>Wave</b></td>
+    <td align="center" width="33%"><a href="media/gaussian_splashing/plunge.mp4"><img src="media/gaussian_splashing/plunge.gif" width="360" alt="Plunge moving-camera demo"></a><br><b>Plunge</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](gaussian_splashing/README.md)
+
+<a id="enliveninggs"></a>
+
+## EnliveningGS
+
+[EnliveningGS](https://gapszju.github.io/EnliveningGS/) gives 3D Gaussian objects active locomotion through muscle-driven deformation and contact.
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="media/enlivening_gs/bread.mp4"><img src="media/enlivening_gs/bread.gif" width="360" alt="Hopping bread moving-camera demo"></a><br><b>Hopping bread</b></td>
+    <td align="center" width="33%"><a href="media/enlivening_gs/wolf.mp4"><img src="media/enlivening_gs/wolf.gif" width="360" alt="Turning wolf moving-camera demo"></a><br><b>Turning wolf</b></td>
+    <td align="center" width="33%"><a href="media/enlivening_gs/vasedeck.mp4"><img src="media/enlivening_gs/vasedeck.gif" width="360" alt="Dancing vase moving-camera demo"></a><br><b>Dancing vase</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](enlivening_gs/README.md)
+
+<a id="magnetic-mpm"></a>
+
+## Magnetic MPM
+
+[A Material Point Method for Nonlinearly Magnetized Materials](https://binwangbfa.github.io/publication/siga21_mpm/) couples nonlinear magnetic fields with deformable solids and viscous fluids.
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="media/magnetic_mpm/ferrofluid.mp4"><img src="media/magnetic_mpm/ferrofluid.gif" width="360" alt="Ferrofluid moving-camera demo"></a><br><b>Ferrofluid</b></td>
+    <td align="center" width="33%"><a href="media/magnetic_mpm/magnetic_bread.mp4"><img src="media/magnetic_mpm/magnetic_bread.gif" width="360" alt="Magnetic bread moving-camera demo"></a><br><b>Magnetic bread</b></td>
+    <td align="center" width="33%"><a href="media/magnetic_mpm/magnetic_wolf.mp4"><img src="media/magnetic_mpm/magnetic_wolf.gif" width="360" alt="Magnetic wolf moving-camera demo"></a><br><b>Magnetic wolf</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](magnetic_mpm/README.md)
+
+<a id="snowygs"></a>
+
+## SnowyGS
+
+SnowyGS combines [A Material Point Method for Snow Simulation](https://alexey.stomakhin.com/research/snow.html) with Gaussian scenes for wind-driven snowfall and accumulated snow.
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="media/snowy_gs/playground.mp4"><img src="media/snowy_gs/playground.gif" width="360" alt="Playground moving-camera demo"></a><br><b>Playground</b></td>
+    <td align="center" width="33%"><a href="media/snowy_gs/firewoods.mp4"><img src="media/snowy_gs/firewoods.gif" width="360" alt="Firewoods moving-camera demo"></a><br><b>Firewoods</b></td>
+    <td align="center" width="33%"><a href="media/snowy_gs/train.mp4"><img src="media/snowy_gs/train.gif" width="360" alt="Train moving-camera demo"></a><br><b>Train</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](snowy_gs/README.md)
+
+<a id="diffwind"></a>
+
+## DiffWind
+
+[DiffWind](https://github.com/zju3dv/DiffWind) models wind-driven Gaussian object dynamics through differentiable fluid-solid coupling with LBM and MPM.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%"><a href="https://github.com/zju3dv/DiffWind/blob/main/media/results/potted_plant_view0.mp4"><img src="https://raw.githubusercontent.com/zju3dv/DiffWind/main/media/results/potted_plant_view0.gif" width="360" alt="DiffWind Potted Plant demo"></a><br><b>Potted Plant</b></td>
+    <td align="center" valign="top" width="33%"><a href="https://github.com/zju3dv/DiffWind/blob/main/media/results/sweater_view0.mp4"><img src="https://raw.githubusercontent.com/zju3dv/DiffWind/main/media/results/sweater_view0.gif" width="360" alt="DiffWind Sweater demo"></a><br><b>Sweater</b></td>
+    <td align="center" valign="top" width="33%"><a href="https://github.com/zju3dv/DiffWind/blob/main/media/results/flag_view0.mp4"><img src="https://raw.githubusercontent.com/zju3dv/DiffWind/main/media/results/flag_view0.gif" width="360" alt="DiffWind Flag demo"></a><br><b>Flag</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](https://github.com/zju3dv/DiffWind)
+
+<a id="physskin"></a>
+
+## PhysSkin
+
+[PhysSkin](https://github.com/zju3dv/PhysSkin) learns continuous neural skinning fields for real-time, generalizable physics-based animation across diverse 3D shapes.
+
+<p align="center">
+  <a href="https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910">
+    <img src="https://raw.githubusercontent.com/zju3dv/PhysSkin/main/assets/readme/preview.gif" alt="PhysSkin++ teaser: interactive physics-based animation" width="960">
+  </a>
+  <br>
+  <a href="https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910"><b>▶ Watch the PhysSkin++ teaser</b></a>
+</p>
+
+[**Code & run guide →**](https://github.com/zju3dv/PhysSkin)
+
+---
+
+## Run a demo
+
+See [installation](INSTALL.md) for the CUDA environment, then:
+
+```bash
+python -m physstudio fetch bread
+python -m physstudio run enlivening bread --gpu 0
+```
+
+Use `--frames 12 --width 640` for a quick preview and `--output` for a custom
+run directory. Use `--dry-run` to print the launcher's exact commands.
+Pretrained models are downloaded separately; [asset links](ASSETS.md) and
+[project credits](THIRD_PARTY.md) are collected in the repository.
+
+<details>
+<summary><b>Repository map</b></summary>
+
+```text
+rainy_gs/             Rain, shallow water, ripples, and reflections
+gaussian_splashing/   Position-based fluids and Gaussian liquid rendering
+enlivening_gs/        Muscle-driven FEM and Gaussian deformation
+magnetic_mpm/        Nonlinear magnetic fields coupled to MLS-MPM
+snowy_gs/             Elastoplastic snow, airborne flakes, and accumulation
+physstudio/           Shared launcher, paths, and download utilities
+media/                Demo videos, animated previews, and an HTML gallery
+```
+
+</details>
