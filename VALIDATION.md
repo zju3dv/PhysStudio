@@ -12,10 +12,11 @@ listed in [INSTALL.md](INSTALL.md).
 | Snow | Free fall, plasticity, friction, deposition; depth rendering; simulation, rendering, mass/contact audit |
 | Lava | Free fall, mass and heat balance, rheology, impact; all three scene simulations, rendering, and replay audits |
 | Water + Sand | All three pipelines; conservation, porous equilibrium, resolution-scaled drag, grain attachment, and same-state rendering |
-| Launcher | All 21 presets; existing 18 command plans unchanged |
+| Plant Wilting | Public-asset hashes, isolated Newton installation, all three pipelines, transport and binding checks |
+| Launcher | All 24 presets; existing 21 command plans unchanged |
 | Downloads | ZIP extraction, CRC-checked cache, destination confinement; SuperSplat manifest, conversion, and camera setup |
-| Media | All 22 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
-| Package | Wheel built with LavaGS and Water + Sand modules, configurations, and reference attribution |
+| Media | All 25 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
+| Package | Wheel includes all method modules, reference attribution, and Plant Wilting runtime/download metadata |
 | Source | Python syntax, English text, portable paths, local documentation links |
 
 Each end-to-end pipeline check used two simulation/video steps. The Playground
@@ -40,3 +41,9 @@ camera, video, and sampling helpers also match. Each of its three presets
 completed a two-frame simulation, Gaussian render, and video audit at the full
 128 × 84 × 75 simulation resolution. Same-state rendering was compared at
 1280 × 800. The showcase contains the completed 180-frame trajectories.
+
+Seven Plant Wilting core modules match the development version after import-path
+normalization. The release workflow checks all three two-frame pipelines at
+640 × 360, using the pinned public models and Newton installation. The Ficus
+renderer reproduces five full-resolution showcase frames pixel for pixel.
+The three plant showcase videos contain the complete reviewed trajectories.

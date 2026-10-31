@@ -1,0 +1,2 @@
+warp-lang==1.17.0
+newton @ https://github.com/newton-physics/newton/archive/e6068cfc1143fe6a62e43ac6cc24361e36618fc0.zip

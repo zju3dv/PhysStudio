@@ -19,6 +19,7 @@ SCENES = {
     "snow": ("playground", "firewoods", "train"),
     "lava": ("zohar", "lands_end", "calico"),
     "water_sand": ("castle", "sediment", "breach"),
+    "wilting": ("potted_plant", "ficus", "alocasia"),
 }
 
 
@@ -37,6 +38,9 @@ def command(module, **options):
 
 def plan(args):
     out = args.output
+    if args.method == "wilting":
+        return [command("plant_wilting.demo", scene=args.scene, output=out,
+                        frames=args.frames, width=args.width)]
     if args.method == "rain":
         opts = json.loads(
             (ROOT / "rainy_gs/configs" / (args.scene + "_demo.json")).read_text()
@@ -202,6 +206,9 @@ def main():
             "zohar",
             "lands_end",
             "calico",
+            "potted_plant",
+            "ficus",
+            "alocasia",
             "all",
         ),
     )
@@ -218,6 +225,9 @@ def main():
                 "zohar",
                 "lands_end",
                 "calico",
+                "potted_plant",
+                "ficus",
+                "alocasia",
             )
             if args.asset == "all"
             else (args.asset,)
@@ -231,6 +241,8 @@ def main():
                 )
             elif asset in ("zohar", "lands_end", "calico"):
                 cmd = command("lava_gs.fetch", scene=asset)
+            elif asset in ("potted_plant", "ficus", "alocasia"):
+                cmd = command("plant_wilting.fetch", scene=asset)
             else:
                 cmd = command("gaussian_splashing.fetch", model=asset)
             subprocess.run(cmd, cwd=ROOT, check=True)

@@ -1,0 +1,26 @@
+{
+  "potted_plant": {
+    "model.ply": {
+      "sha256": "79253bf65321bdca634a972cc0f1b06d942941ee072cb7c596a1ee15e49ba801"
+    },
+    "config.json": {
+      "sha256": "8f7629cff784182b1adcc319f543da6c4815e19a041c7dd62e4b605d5b1c7d82"
+    }
+  },
+  "ficus": {
+    "model.ply": {
+      "sha256": "f370719065bf41104cbc0e13f2351d044620e47a4e54765a0f29b71fe3adb437"
+    },
+    "config.json": {
+      "sha256": "3dc156d933e43567e553af221da73b439cab2a25b0e04dde42c796aa3c22c4e3"
+    }
+  },
+  "alocasia": {
+    "model.ply": {
+      "sha256": "e4e4cf85ddff9df684f3ec5b6c3cc14b0712aaa9165c569c64f9980cae05c69f"
+    },
+    "config.json": {
+      "sha256": "8e9a198aa1278367ac30c82b43542e67c5cbfeb14586e9790c14cd628a0db8a4"
+    }
+  }
+}

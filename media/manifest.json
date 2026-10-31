@@ -315,5 +315,71 @@
     "duration": "6.000000",
     "nb_frames": "180",
     "sha256": "82f4efc4170451bcc947b9f3f5f65d6b911e9330f8e481d711c398e2b432524a"
+  },
+  {
+    "method": "plant_wilting",
+    "scene": "potted_plant",
+    "label": "Potted Plant",
+    "paper": "https://dl.acm.org/doi/10.1145/3610548.3618218",
+    "video": "media/plant_wilting/potted_plant.mp4",
+    "command": "python -m physstudio run wilting potted_plant --gpu 0",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "30/1",
+    "duration": "8.000000",
+    "nb_frames": "240",
+    "sha256": "95e7dbcd7c65f910046f5509fde11fa89298f0e2af31f58131a82fd7f04d66c5",
+    "preview": {
+      "format": "gif",
+      "width": 640,
+      "height": 360,
+      "fps": 12,
+      "loop": 0,
+      "layout": "Full frame: Gaussian appearance, local water content, and water-loss curve"
+    }
+  },
+  {
+    "method": "plant_wilting",
+    "scene": "ficus",
+    "label": "Ficus",
+    "paper": "https://dl.acm.org/doi/10.1145/3610548.3618218",
+    "video": "media/plant_wilting/ficus.mp4",
+    "command": "python -m physstudio run wilting ficus --gpu 0",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "30/1",
+    "duration": "8.000000",
+    "nb_frames": "240",
+    "sha256": "50b0638664fbebaac8af7b01b4da012e89b07d37ad4ca698796bf4bce92088fe",
+    "preview": {
+      "format": "gif",
+      "width": 640,
+      "height": 360,
+      "fps": 12,
+      "loop": 0,
+      "layout": "Full frame: Gaussian appearance, local water content, and water-loss curve"
+    }
+  },
+  {
+    "method": "plant_wilting",
+    "scene": "alocasia",
+    "label": "Alocasia",
+    "paper": "https://dl.acm.org/doi/10.1145/3610548.3618218",
+    "video": "media/plant_wilting/alocasia.mp4",
+    "command": "python -m physstudio run wilting alocasia --gpu 0",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "30/1",
+    "duration": "8.000000",
+    "nb_frames": "240",
+    "sha256": "b0c7f024ae90023c73a736ac1bbacb388e228e0add9b0d2accb4147d64eb14e5",
+    "preview": {
+      "format": "gif",
+      "width": 640,
+      "height": 360,
+      "fps": 12,
+      "loop": 0,
+      "layout": "Full frame: Gaussian appearance, local water content, and water-loss curve"
+    }
   }
 ]

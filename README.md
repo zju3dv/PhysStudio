@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="media/physstudio-physics-lab.svg" alt="PhysStudio — A Vibe-Coded Physics Lab" width="100%">
+<img src="media/physstudio-wordmark-v3.svg" alt="PhysStudio — animated physics wordmark" width="100%">
 
 **Recreating fun physics-based animation projects through vibe coding.**
 
@@ -10,7 +10,7 @@
 ![Vibe Coding](https://img.shields.io/badge/Made_with-Vibe_Coding-22d3ee?style=flat-square)
 
 [RainyGS](#rainygs) · [Gaussian Splashing](#gaussian-splashing) · [EnliveningGS](#enliveninggs) · [Magnetic MPM](#magnetic-mpm) · [SnowyGS](#snowygs)<br>
-[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags) · [Water + Sand](#water-sand)
+[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags) · [Water + Sand](#water-sand) · [Plant Wilting](#plant-wilting)
 
 [**Get started**](INSTALL.md) &nbsp; / &nbsp; [**Download assets**](ASSETS.md) &nbsp; / &nbsp; [**Video gallery**](media/index.html)
 
@@ -179,6 +179,22 @@ Water + Sand combines [Volume-Preserving LBM-MPM Coupling for Air-Water-Sand Mix
 
 [**Code & run guide →**](water_sand/README.md)
 
+<a id="plant-wilting"></a>
+
+## Plant Wilting
+
+[A Physically-inspired Approach to the Simulation of Plant Wilting](https://dl.acm.org/doi/10.1145/3610548.3618218) couples water transport and material softening to animate drying plants, rendered here with 3D Gaussians.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%"><a href="media/plant_wilting/potted_plant.mp4"><img src="media/plant_wilting/potted_plant.gif" width="360" alt="Potted Plant wilting and water-content changes"></a><br><b>Potted Plant</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/plant_wilting/ficus.mp4"><img src="media/plant_wilting/ficus.gif" width="360" alt="Ficus wilting and water-content changes"></a><br><b>Ficus</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/plant_wilting/alocasia.mp4"><img src="media/plant_wilting/alocasia.gif" width="360" alt="Alocasia wilting and water-content changes"></a><br><b>Alocasia</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](plant_wilting/README.md)
+
 ---
 
 ## Run a demo
@@ -206,6 +222,7 @@ magnetic_mpm/        Nonlinear magnetic fields coupled to MLS-MPM
 snowy_gs/             Elastoplastic snow, airborne flakes, and accumulation
 lava_gs/              Thermoviscoplastic lava, rock contact, and thermal emission
 water_sand/           Air–water LBM, granular MPM, and Gaussian grains
+plant_wilting/        Water transport, Newton rods, and Gaussian plant motion
 physstudio/           Shared launcher, paths, and download utilities
 media/                Demo videos, animated previews, and an HTML gallery
 ```

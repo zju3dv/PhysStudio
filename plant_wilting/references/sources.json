@@ -1,0 +1,21 @@
+{
+  "paper": {
+    "url": "https://dl.acm.org/doi/10.1145/3610548.3618218"
+  },
+  "plant_water_diffusion": {
+    "url": "https://github.com/filthynobleman/plant-water-diffusion",
+    "commit": "8308f91bd1da126975a5a76295c60bbaee8fc1f9"
+  },
+  "plant_wilting_simulation": {
+    "url": "https://github.com/filthynobleman/plant-wilting-simulation",
+    "commit": "7ababcaa08834e55b8453f5f55485a96e4850b4c"
+  },
+  "newton": {
+    "url": "https://github.com/newton-physics/newton",
+    "commit": "e6068cfc1143fe6a62e43ac6cc24361e36618fc0"
+  },
+  "DiffWind": {
+    "url": "https://github.com/zju3dv/DiffWind",
+    "commit": "a47530ec2fafd6f647c87a8f8e086b1905dbfe52"
+  }
+}

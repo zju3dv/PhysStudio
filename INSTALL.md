@@ -2,7 +2,8 @@
 
 Tested with Linux, Python 3.10, PyTorch 2.4.0, CUDA 11.8, Warp 1.6.2,
 gsplat 1.5.3, and an NVIDIA RTX 3090. A CUDA toolkit and a C++ compiler are
-needed for gsplat's CUDA extension. Install `ffmpeg` and `ffprobe` on your system.
+needed for gsplat's CUDA extension. Install `ffmpeg`, `ffprobe`, and the DejaVu
+Sans fonts on your system.
 
 From this repository:
 
@@ -42,6 +43,8 @@ export PHYSSTUDIO_DATA_ROOT=/path/to/assets
 frames for rain, snow, lava, and water–sand, and the approximate half-speed video length for
 locomotion (the initial state adds one frame).
 
+For Plant Wilting previews, `--frames` sets both simulation and video frames.
+
 See [VALIDATION.md](VALIDATION.md) for completed checks and validation commands.
 
 Lava scene preparation also uses Node.js 22+ and the pinned PlayCanvas converter; see [LavaGS](lava_gs/README.md).
@@ -51,3 +54,14 @@ Water + Sand uses procedural scenes and the same installed dependencies:
 ```bash
 python -m physstudio run water_sand castle --gpu 0
 ```
+
+Plant Wilting installs its pinned Newton / Warp solver into a project-local directory:
+
+```bash
+python -m plant_wilting.runtime
+python -m physstudio fetch potted_plant
+python -m physstudio run wilting potted_plant --gpu 0
+```
+
+Its solver runs in a separate process; the shared rendering environment stays at
+Warp 1.6.2. See [Plant Wilting](plant_wilting/README.md) for all three scenes.

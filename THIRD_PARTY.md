@@ -22,3 +22,11 @@ by Xiaoyu Xiao; its [MIT notice](water_sand/LICENSE.reference) is included.
 [OpenHOMELBM](https://github.com/kuiwuchn/OpenHOMELBM) provides the 3D Warp LBM
 organization reference. Pinned revisions are in
 [water_sand/references/sources.json](water_sand/references/sources.json).
+
+Plant Wilting uses the water-transport formulation from
+[Filippo Maggioli and collaborators](https://github.com/filthynobleman/plant-water-diffusion),
+with its [MIT notice](plant_wilting/LICENSE.reference), and
+[Newton VBD rods](https://github.com/newton-physics/newton) as the GPU mechanical backend.
+Plant Gaussians are downloaded from [DiffWind](https://github.com/zju3dv/DiffWind).
+[Pinned sources](plant_wilting/references/sources.json) and
+[asset hashes](plant_wilting/references/assets.json) accompany the workflow.
