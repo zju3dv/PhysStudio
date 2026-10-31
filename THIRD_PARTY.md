@@ -30,3 +30,10 @@ with its [MIT notice](plant_wilting/LICENSE.reference), and
 Plant Gaussians are downloaded from [DiffWind](https://github.com/zju3dv/DiffWind).
 [Pinned sources](plant_wilting/references/sources.json) and
 [asset hashes](plant_wilting/references/assets.json) accompany the workflow.
+
+StormGS implements the moist-flow model from
+[Cyclogenesis: Simulating Hurricanes and Tornadoes](https://doi.org/10.1145/3658149).
+The authors' [CycloCore notebook](https://github.com/AgrosAmad/CycloCore)
+(MPL 2.0) supplies reference equations; the Warp solver is implemented here.
+The scene assets are shared with RainyGS and LavaGS.
+[Pinned sources](storm_gs/references/sources.json).

@@ -13,9 +13,10 @@ listed in [INSTALL.md](INSTALL.md).
 | Lava | Free fall, mass and heat balance, rheology, impact; all three scene simulations, rendering, and replay audits |
 | Water + Sand | All three pipelines; conservation, porous equilibrium, resolution-scaled drag, grain attachment, and same-state rendering |
 | Plant Wilting | Public-asset hashes, isolated Newton installation, all three pipelines, transport and binding checks |
-| Launcher | All 24 presets; existing 21 command plans unchanged |
+| Storms | Moisture and latent heat, pressure projection, wall contact, dust transport, occlusion; all three pipelines and frozen-state rendering |
+| Launcher | All 27 presets; existing 24 command plans unchanged |
 | Downloads | ZIP extraction, CRC-checked cache, destination confinement; SuperSplat manifest, conversion, and camera setup |
-| Media | All 25 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
+| Media | All 28 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
 | Package | Wheel includes all method modules, reference attribution, and Plant Wilting runtime/download metadata |
 | Source | Python syntax, English text, portable paths, local documentation links |
 
@@ -47,3 +48,10 @@ normalization. The release workflow checks all three two-frame pipelines at
 640 × 360, using the pinned public models and Newton installation. The Ficus
 renderer reproduces five full-resolution showcase frames pixel for pixel.
 The three plant showcase videos contain the complete reviewed trajectories.
+
+Four StormGS core modules match the development version after import-path
+normalization and formatting. Each of its three presets completed a two-frame
+simulation, Gaussian render, and video audit. Nine frozen showcase keyframes
+reproduce the development renders pixel for pixel at native resolution. The
+three showcase videos contain 240 frames each. The wheel includes the StormGS
+modules, scene calibrations, run guide, and reference metadata.

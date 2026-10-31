@@ -20,6 +20,7 @@ SCENES = {
     "lava": ("zohar", "lands_end", "calico"),
     "water_sand": ("castle", "sediment", "breach"),
     "wilting": ("potted_plant", "ficus", "alocasia"),
+    "storm": ("playground", "lands_end", "calico"),
 }
 
 
@@ -38,6 +39,10 @@ def command(module, **options):
 
 def plan(args):
     out = args.output
+    if args.method == "storm":
+        return [command("storm_gs.demo", scene=args.scene, output=out,
+                        frames=args.frames or 240, width=args.width or 1280,
+                        warmup=8 if args.scene == "calico" else 5, dt=.012)]
     if args.method == "wilting":
         return [command("plant_wilting.demo", scene=args.scene, output=out,
                         frames=args.frames, width=args.width)]

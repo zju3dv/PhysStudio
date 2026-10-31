@@ -1,0 +1,37 @@
+{
+  "world_transform": [
+    [
+      0.6529211059934713,
+      0.0,
+      -0.7574259233405352,
+      -4.69154636022282
+    ],
+    [
+      0.7574259233405352,
+      0.0,
+      0.6529211059934713,
+      3.545370721105557
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      -0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ground_plane": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "far_plane": 100000.0,
+  "source": "Calico Basin at sunrise, Red Rock Canyon, Las Vegas NV by tosolini",
+  "source_url": "https://superspl.at/scene/5d517144",
+  "license": "CC BY 4.0"
+}

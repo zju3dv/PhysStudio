@@ -40,7 +40,7 @@ export PHYSSTUDIO_DATA_ROOT=/path/to/assets
 ```
 
 `--frames` controls saved simulation steps for splashing and magnetism, video
-frames for rain, snow, lava, and water–sand, and the approximate half-speed video length for
+frames for rain, snow, lava, storms, and water–sand, and the approximate half-speed video length for
 locomotion (the initial state adds one frame).
 
 For Plant Wilting previews, `--frames` sets both simulation and video frames.
@@ -65,3 +65,12 @@ python -m physstudio run wilting potted_plant --gpu 0
 
 Its solver runs in a separate process; the shared rendering environment stays at
 Warp 1.6.2. See [Plant Wilting](plant_wilting/README.md) for all three scenes.
+
+StormGS uses the shared environment and the existing scene downloaders:
+
+```bash
+python -m physstudio fetch playground
+python -m physstudio run storm playground --gpu 0
+```
+
+See [StormGS](storm_gs/README.md) for the coastal and desert scenes.

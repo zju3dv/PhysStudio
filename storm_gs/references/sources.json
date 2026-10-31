@@ -1,0 +1,29 @@
+{
+  "paper": {
+    "title": "Cyclogenesis: Simulating Hurricanes and Tornadoes",
+    "doi": "10.1145/3658149",
+    "year": 2024,
+    "project": "https://computationalsciences.org/publications/amador-herrera-2024-cyclogenesis.html",
+    "pdf": "https://computationalsciences.org/publications/amador-herrera-2024-cyclogenesis/amador-herrera-2024-cyclogenesis.pdf"
+  },
+  "author_notebook": {
+    "repository": "https://github.com/AgrosAmad/CycloCore",
+    "commit": "40b55926b332cf868c5220dd082bf8f100a79452",
+    "license": "MPL-2.0"
+  },
+  "scene_assets": {
+    "playground": {
+      "source": "https://github.com/PKU-VCL-Geometry/FieryGS#data"
+    },
+    "lands_end": {
+      "source": "https://superspl.at/scene/9e2051b8",
+      "author": "draftmode",
+      "license": "CC-BY-4.0"
+    },
+    "calico": {
+      "source": "https://superspl.at/scene/5d517144",
+      "author": "tosolini",
+      "license": "CC-BY-4.0"
+    }
+  }
+}

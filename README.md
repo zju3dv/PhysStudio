@@ -10,7 +10,7 @@
 ![Vibe Coding](https://img.shields.io/badge/Made_with-Vibe_Coding-22d3ee?style=flat-square)
 
 [RainyGS](#rainygs) · [Gaussian Splashing](#gaussian-splashing) · [EnliveningGS](#enliveninggs) · [Magnetic MPM](#magnetic-mpm) · [SnowyGS](#snowygs)<br>
-[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags) · [Water + Sand](#water-sand) · [Plant Wilting](#plant-wilting)
+[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags) · [Water + Sand](#water-sand) · [Plant Wilting](#plant-wilting) · [StormGS](#stormgs)
 
 [**Get started**](INSTALL.md) &nbsp; / &nbsp; [**Download assets**](ASSETS.md) &nbsp; / &nbsp; [**Video gallery**](media/index.html)
 
@@ -195,6 +195,22 @@ Water + Sand combines [Volume-Preserving LBM-MPM Coupling for Air-Water-Sand Mix
 
 [**Code & run guide →**](plant_wilting/README.md)
 
+<a id="stormgs"></a>
+
+## StormGS
+
+[Cyclogenesis: Simulating Hurricanes and Tornadoes](https://computationalsciences.org/publications/amador-herrera-2024-cyclogenesis.html) brings rotating clouds, rain, sea spray, and terrain-driven dust to Gaussian scenes.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%"><a href="media/storm_gs/playground.mp4"><img src="media/storm_gs/playground.gif" width="360" alt="Playground tornado demo"></a><br><b>Playground</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/storm_gs/lands_end.mp4"><img src="media/storm_gs/lands_end.gif" width="360" alt="Land's End waterspout demo"></a><br><b>Land's End</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/storm_gs/calico.mp4"><img src="media/storm_gs/calico.gif" width="360" alt="Calico dust devil demo"></a><br><b>Calico</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](storm_gs/README.md)
+
 ---
 
 ## Run a demo
@@ -223,6 +239,7 @@ snowy_gs/             Elastoplastic snow, airborne flakes, and accumulation
 lava_gs/              Thermoviscoplastic lava, rock contact, and thermal emission
 water_sand/           Air–water LBM, granular MPM, and Gaussian grains
 plant_wilting/        Water transport, Newton rods, and Gaussian plant motion
+storm_gs/             Moist vortices, rain, sea spray, and transported dust
 physstudio/           Shared launcher, paths, and download utilities
 media/                Demo videos, animated previews, and an HTML gallery
 ```

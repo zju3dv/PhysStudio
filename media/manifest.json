@@ -381,5 +381,47 @@
       "loop": 0,
       "layout": "Full frame: Gaussian appearance, local water content, and water-loss curve"
     }
+  },
+  {
+    "method": "storm_gs",
+    "scene": "playground",
+    "label": "Playground",
+    "paper": "https://computationalsciences.org/publications/amador-herrera-2024-cyclogenesis.html",
+    "video": "media/storm_gs/playground.mp4",
+    "command": "python -m physstudio run storm playground --gpu 0",
+    "width": 1280,
+    "height": 694,
+    "r_frame_rate": "30/1",
+    "nb_frames": "240",
+    "duration": "8.000000",
+    "sha256": "b6c10c6f417ecb83b1b59f6b00092c1981bcfdce344921a13a6501934bb12eb4"
+  },
+  {
+    "method": "storm_gs",
+    "scene": "lands_end",
+    "label": "Land's End",
+    "paper": "https://computationalsciences.org/publications/amador-herrera-2024-cyclogenesis.html",
+    "video": "media/storm_gs/lands_end.mp4",
+    "command": "python -m physstudio run storm lands_end --gpu 0",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "nb_frames": "240",
+    "duration": "8.000000",
+    "sha256": "dde4a8784dc2b402665d7d3aa6bbfecf1528e936db066b0bc8aa0076133e5b80"
+  },
+  {
+    "method": "storm_gs",
+    "scene": "calico",
+    "label": "Calico",
+    "paper": "https://computationalsciences.org/publications/amador-herrera-2024-cyclogenesis.html",
+    "video": "media/storm_gs/calico.mp4",
+    "command": "python -m physstudio run storm calico --gpu 0",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "30/1",
+    "nb_frames": "240",
+    "duration": "8.000000",
+    "sha256": "7e03450650a68394ce3c972f09db914c7d5929d169449133bdaa8aa79b81ed9f"
   }
 ]
