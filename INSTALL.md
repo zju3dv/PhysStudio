@@ -40,7 +40,7 @@ export PHYSSTUDIO_DATA_ROOT=/path/to/assets
 ```
 
 `--frames` controls saved simulation steps for splashing and magnetism, video
-frames for rain, snow, lava, storms, and water–sand, and the approximate half-speed video length for
+frames for rain, snow, lava, storms, lightning, and water–sand, and the approximate half-speed video length for
 locomotion (the initial state adds one frame).
 
 For Plant Wilting previews, `--frames` sets both simulation and video frames.
@@ -74,3 +74,12 @@ python -m physstudio run storm playground --gpu 0
 ```
 
 See [StormGS](storm_gs/README.md) for the coastal and desert scenes.
+
+ThunderGS uses the same environment and scene downloaders:
+
+```bash
+python -m physstudio fetch firewoods
+python -m physstudio run thunder firewoods --gpu 0
+```
+
+See [ThunderGS](thunder_gs/README.md) for Zohar, Train, cached discharges, and replay.

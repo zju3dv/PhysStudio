@@ -14,7 +14,7 @@ PhysGaussian, and the SuperSplat authors credited in the LavaGS presets; [ASSETS
 Models, camera archives, paper PDFs, and third-party binary packages are not
 included in this repository. The implementation demos are rendered by PhysStudio using those publicly released assets.
 
-The MeGAS showcase uses the official Kitchen video from the [MeGAS project page](https://zju3dv.github.io/MeGAS/). The README plays a full-frame animated loop, and the video gallery autoplays the original MP4. The source URL and hash are recorded in `media/manifest.json`. [MeGAS code](https://github.com/zju3dv/MeGAS).
+The MeGAS showcase uses the official Bidirectional Phase-Change Editing video from the [MeGAS project page](https://zju3dv.github.io/MeGAS/). The README plays a full-frame animated loop, and the video gallery autoplays the original MP4. The source URL and hash are recorded in `media/manifest.json`. [MeGAS code](https://github.com/zju3dv/MeGAS).
 
 Water + Sand adapts constitutive and coupling routines from the
 [released 2D LBM–MPM implementation](https://github.com/DacianShaw/LBM-MPM-Air-Water-Sand)
@@ -37,3 +37,9 @@ The authors' [CycloCore notebook](https://github.com/AgrosAmad/CycloCore)
 (MPL 2.0) supplies reference equations; the Warp solver is implemented here.
 The scene assets are shared with RainyGS and LavaGS.
 [Pinned sources](storm_gs/references/sources.json).
+
+ThunderGS implements the electrical-discharge model from
+[Thunderstruck: Visually Simulating Electrical Storms](https://jonathank.de/research/paper/Herrera2025_thunderstruck.pdf),
+with a neutral floating-channel correction and Gaussian-scene lighting.
+Firewoods and Train reuse the RainyGS assets; Zohar is the CC BY 4.0 scene
+by barak9177 used in LavaGS. [Sources](thunder_gs/references/sources.json).

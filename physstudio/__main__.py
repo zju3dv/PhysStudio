@@ -21,6 +21,7 @@ SCENES = {
     "water_sand": ("castle", "sediment", "breach"),
     "wilting": ("potted_plant", "ficus", "alocasia"),
     "storm": ("playground", "lands_end", "calico"),
+    "thunder": ("firewoods", "zohar", "train"),
 }
 
 
@@ -39,6 +40,12 @@ def command(module, **options):
 
 def plan(args):
     out = args.output
+    if args.method == "thunder":
+        return [
+            command("thunder_gs.simulate", scene=args.scene, output=out / "simulation"),
+            command("thunder_gs.demo", simulation=out / "simulation", output=out / "render",
+                    frames=args.frames or 240, width=args.width or 1280),
+        ]
     if args.method == "storm":
         return [command("storm_gs.demo", scene=args.scene, output=out,
                         frames=args.frames or 240, width=args.width or 1280,

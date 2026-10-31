@@ -10,7 +10,7 @@
 ![Vibe Coding](https://img.shields.io/badge/Made_with-Vibe_Coding-22d3ee?style=flat-square)
 
 [RainyGS](#rainygs) · [Gaussian Splashing](#gaussian-splashing) · [EnliveningGS](#enliveninggs) · [Magnetic MPM](#magnetic-mpm) · [SnowyGS](#snowygs)<br>
-[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags) · [Water + Sand](#water-sand) · [Plant Wilting](#plant-wilting) · [StormGS](#stormgs)
+[DiffWind](#diffwind) · [PhysSkin](#physskin) · [MeGAS](#megas) · [LavaGS](#lavags) · [Water + Sand](#water-sand) · [Plant Wilting](#plant-wilting) · [StormGS](#stormgs) · [ThunderGS](#thundergs)
 
 [**Get started**](INSTALL.md) &nbsp; / &nbsp; [**Download assets**](ASSETS.md) &nbsp; / &nbsp; [**Video gallery**](media/index.html)
 
@@ -141,8 +141,8 @@ SnowyGS combines [A Material Point Method for Snow Simulation](https://alexey.st
 [MeGAS](https://zju3dv.github.io/MeGAS/) brings temperature fields and thermomechanical phase transitions to Gaussian scenes for melting and solidification.
 
 <p align="center">
-  <b>Kitchen</b><br>
-  <img src="media/megas/kitchen.gif" width="960" alt="MeGAS Kitchen: looping official video">
+  <b>Bidirectional Phase-Change Editing</b><br>
+  <img src="media/megas/bidirectional_phase.gif" width="960" alt="MeGAS Bidirectional Phase-Change Editing: looping official video">
 </p>
 
 [**Code & run guide →**](https://github.com/zju3dv/MeGAS)
@@ -211,6 +211,22 @@ Water + Sand combines [Volume-Preserving LBM-MPM Coupling for Air-Water-Sand Mix
 
 [**Code & run guide →**](storm_gs/README.md)
 
+<a id="thundergs"></a>
+
+## ThunderGS
+
+[Thunderstruck: Visually Simulating Electrical Storms](https://jonathank.de/research/paper/Herrera2025_thunderstruck.pdf) brings electric-field-driven lightning branches, ground attachment, and flash illumination to Gaussian scenes.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%"><a href="media/thunder_gs/firewoods.mp4"><img src="media/thunder_gs/firewoods.gif" width="360" alt="Firewoods lightning demo"></a><br><b>Firewoods</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/thunder_gs/zohar.mp4"><img src="media/thunder_gs/zohar.gif" width="360" alt="Zohar lightning demo"></a><br><b>Zohar</b></td>
+    <td align="center" valign="top" width="33%"><a href="media/thunder_gs/train.mp4"><img src="media/thunder_gs/train.gif" width="360" alt="Train lightning demo"></a><br><b>Train</b></td>
+  </tr>
+</table>
+
+[**Code & run guide →**](thunder_gs/README.md)
+
 ---
 
 ## Run a demo
@@ -240,6 +256,7 @@ lava_gs/              Thermoviscoplastic lava, rock contact, and thermal emissio
 water_sand/           Air–water LBM, granular MPM, and Gaussian grains
 plant_wilting/        Water transport, Newton rods, and Gaussian plant motion
 storm_gs/             Moist vortices, rain, sea spray, and transported dust
+thunder_gs/           Electric discharge, grounded terrain, and flash lighting
 physstudio/           Shared launcher, paths, and download utilities
 media/                Demo videos, animated previews, and an HTML gallery
 ```

@@ -6,12 +6,12 @@ excluded from Git. Set `PHYSSTUDIO_DATA_ROOT` to use another storage location.
 | Asset | Source and download | Used by |
 | :--- | :--- | :--- |
 | Playground | [FieryGS](https://github.com/PKU-VCL-Geometry/FieryGS#data) · [archive](https://drive.google.com/file/d/1NFXzr0YU3q1_ezjWVEgTmd-R8JX4J0lL/view) | Rain, snow, storms |
-| Firewoods | [FieryGS](https://github.com/PKU-VCL-Geometry/FieryGS#data) · [archive](https://drive.google.com/file/d/1EMWrcSLbeLjTWyGUh_cThYGvrrmMrvC0/view) | Rain, snow |
-| Train | [Voxel51 model](https://huggingface.co/datasets/Voxel51/gaussian_splatting/tree/main/FO_dataset/train) · [Graphdeco cameras](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/pretrained/models.zip) | Rain, snow |
+| Firewoods | [FieryGS](https://github.com/PKU-VCL-Geometry/FieryGS#data) · [archive](https://drive.google.com/file/d/1EMWrcSLbeLjTWyGUh_cThYGvrrmMrvC0/view) | Rain, snow, lightning |
+| Train | [Voxel51 model](https://huggingface.co/datasets/Voxel51/gaussian_splatting/tree/main/FO_dataset/train) · [Graphdeco cameras](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/pretrained/models.zip) | Rain, snow, lightning |
 | Bread | [PhysGaussian](https://github.com/XPandora/PhysGaussian) · [archive](https://drive.google.com/file/d/1e2_9OxfVtLSJTKl_y3TPaYQGjnvr3koT/view) | Splashing, locomotion, magnetism |
 | Wolf | [PhysGaussian](https://github.com/XPandora/PhysGaussian) · [archive](https://drive.google.com/file/d/1FhB_1LFaC2ax71gbySn6hVR88_IiK0eU/view) | Splashing, locomotion, magnetism |
 | Vase | [PhysGaussian](https://github.com/XPandora/PhysGaussian) · [archive](https://drive.google.com/file/d/1AZh-JCNTwq9Za0rxFpDEBk-9tN6o_izs/view) | Locomotion |
-| Zohar canyon | [SuperSplat model](https://superspl.at/scene/7aa4d3d4), barak9177 · CC BY 4.0 | Lava |
+| Zohar canyon | [SuperSplat model](https://superspl.at/scene/7aa4d3d4), barak9177 · CC BY 4.0 | Lava, lightning |
 | Land's End cliff | [SuperSplat model](https://superspl.at/scene/9e2051b8), draftmode · CC BY 4.0 | Lava, storms |
 | Potted Plant, Ficus, Alocasia | [DiffWind models](https://github.com/zju3dv/DiffWind/tree/a47530ec2fafd6f647c87a8f8e086b1905dbfe52/assets) · [source configurations](https://github.com/zju3dv/DiffWind/tree/a47530ec2fafd6f647c87a8f8e086b1905dbfe52/configs) | Plant wilting |
 | Calico Basin | [SuperSplat model](https://superspl.at/scene/5d517144), tosolini · CC BY 4.0 | Lava, storms |

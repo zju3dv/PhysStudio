@@ -1,0 +1,14 @@
+{
+  "paper": {
+    "title": "Thunderstruck: Visually Simulating Electrical Storms",
+    "url": "https://jonathank.de/research/paper/Herrera2025_thunderstruck.pdf",
+    "doi": "https://doi.org/10.1109/TVCG.2025.3596334",
+    "implementation_focus": "Poisson field, EDS growth, channel resistance, scene ground boundaries, and charge-based brightness",
+    "local_extension": "Neutral floating-conductor potential correction through a unit-capacitance solve"
+  },
+  "assets": {
+    "firewoods": "https://github.com/PKU-VCL-Geometry/FieryGS#data",
+    "train": "https://huggingface.co/datasets/Voxel51/gaussian_splatting/tree/main/FO_dataset/train",
+    "zohar": "https://superspl.at/scene/7aa4d3d4"
+  }
+}

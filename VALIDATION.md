@@ -14,9 +14,10 @@ listed in [INSTALL.md](INSTALL.md).
 | Water + Sand | All three pipelines; conservation, porous equilibrium, resolution-scaled drag, grain attachment, and same-state rendering |
 | Plant Wilting | Public-asset hashes, isolated Newton installation, all three pipelines, transport and binding checks |
 | Storms | Moisture and latent heat, pressure projection, wall contact, dust transport, occlusion; all three pipelines and frozen-state rendering |
-| Launcher | All 27 presets; existing 24 command plans unchanged |
+| Lightning | Poisson accuracy, gauge invariance, conductor enhancement, charge balance, occlusion; all three pipelines and frozen-state rendering |
+| Launcher | All 30 presets; existing 27 command plans unchanged |
 | Downloads | ZIP extraction, CRC-checked cache, destination confinement; SuperSplat manifest, conversion, and camera setup |
-| Media | All 28 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
+| Media | All 31 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
 | Package | Wheel includes all method modules, reference attribution, and Plant Wilting runtime/download metadata |
 | Source | Python syntax, English text, portable paths, local documentation links |
 
@@ -55,3 +56,10 @@ simulation, Gaussian render, and video audit. Nine frozen showcase keyframes
 reproduce the development renders pixel for pixel at native resolution. The
 three showcase videos contain 240 frames each. The wheel includes the StormGS
 modules, scene calibrations, run guide, and reference metadata.
+
+ThunderGS preserves the development solver and renderer after formatting.
+All three presets regenerate their three discharges and complete a two-frame
+Gaussian render, video audit, and gallery build. Nine full-resolution frozen
+keyframes reproduce the development images pixel for pixel. The three released
+videos contain 240 frames at 30 fps; the wheel includes all ThunderGS modules,
+scene calibrations, run guide, and paper/asset references.
