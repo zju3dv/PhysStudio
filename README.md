@@ -424,7 +424,7 @@ media/                Demo videos, animated previews, and an HTML gallery
 
 🤝 Thanks go to these wonderful people:
 
-[Yuanhang Lei](https://github.com/huahuo359) · [Zesong Yang](https://yzszy.github.io/) · [Baofei Liu](https://github.com/LaBaFan) · Zixuan Wang · [Minghao Feng](https://github.com/fightingff) · [Tao Cheng](https://tao-cheng.cc) · [Xingxuan Li](https://github.com/Leo11-strive) · Weiran Shi
+[Yuanhang Lei](https://github.com/huahuo359) · [Zesong Yang](https://yzszy.github.io/) · [Baofei Liu](https://github.com/LaBaFan) · [Zixuan Wang](https://github.com/wzxtsl) · [Minghao Feng](https://github.com/fightingff) · [Tao Cheng](https://tao-cheng.cc) · [Xingxuan Li](https://github.com/Leo11-strive) · Weiran Shi
 
 We are grateful to our advisors, [Prof. Hujun Bao](https://person.zju.edu.cn/en/0093140), [Prof. Zhaopeng Cui](https://zhpcui.github.io/), [Dr. Siyuan Huang](https://siyuanhuang.com/), [Prof. Peter Yichen Chen](https://peterchencyc.com/), and [Prof. Ruizhen Hu](https://csse.szu.edu.cn/staff/ruizhenhu/), for their guidance and support.
 
