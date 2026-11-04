@@ -129,3 +129,14 @@ PhysStudio's Apache 2.0 license. The [authors' C++ implementation](https://githu
 was consulted for algorithm research; its code is neither bundled nor required.
 Blender supplies Cycles rendering, and all scene assets are procedural.
 [Paper, pinned reference and rendering metadata](melp_thin_film/references/sources.json).
+
+Robot Pouring uses the official [MuJoCo Warp](https://github.com/google-deepmind/mujoco_warp)
+rigid-body backend and the [Franka Panda model](https://github.com/google-deepmind/mujoco_menagerie/tree/98a70c569c4c1b6da467a20012f766ee1f8dc521/franka_emika_panda)
+from MuJoCo Menagerie, retaining its [Apache-2.0 license](robot_pouring/LICENSE.reference).
+The Warp liquid solver independently implements position-based fluid concepts
+from [Macklin and Mueller](https://mmacklin.com/pbf_sig_preprint.pdf). Task logic,
+cup coupling and RL interfaces are original PhysStudio code. Blender supplies
+Cycles rendering. The videos use Google Sans by the Google Sans Project Authors;
+font downloads retain the [SIL Open Font License](robot_pouring/references/GoogleSans-OFL.txt).
+Robot meshes and font binaries are downloaded separately and are not bundled.
+[Source metadata](robot_pouring/references/sources.json).

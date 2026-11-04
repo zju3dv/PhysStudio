@@ -16,7 +16,7 @@ dependencies = ["torch>=2.4,<2.5", "numpy==1.26.4", "scipy==1.14.0", "Pillow==10
 physstudio = "physstudio.__main__:main"
 
 [tool.setuptools.packages.find]
-include = ["physstudio*", "rainy_gs*", "gaussian_splashing*", "enlivening_gs*", "magnetic_mpm*", "snowy_gs*", "lava_gs*", "water_sand*", "plant_wilting*", "storm_gs*", "thunder_gs*", "surface_tension*", "ice_melting*", "firex_gs*", "implicit_mixture*", "ice_solidification*", "rhizomorph*", "windy_trees*", "magnetic_rigid*", "melp_thin_film*"]
+include = ["physstudio*", "rainy_gs*", "gaussian_splashing*", "enlivening_gs*", "magnetic_mpm*", "snowy_gs*", "lava_gs*", "water_sand*", "plant_wilting*", "storm_gs*", "thunder_gs*", "surface_tension*", "ice_melting*", "firex_gs*", "implicit_mixture*", "ice_solidification*", "rhizomorph*", "windy_trees*", "magnetic_rigid*", "melp_thin_film*", "robot_pouring*"]
 
 [tool.setuptools.package-data]
 rainy_gs = ["configs/*.json"]
@@ -40,3 +40,5 @@ windy_trees = ["references/*.json", "requirements.txt", "dense_wind.json", "READ
 magnetic_rigid = ["references/*.json", "requirements.txt", "README.md", "METHOD.md", "VALIDATION.md"]
 
 melp_thin_film = ["references/*.json", "requirements.txt", "README.md", "METHOD.md", "VALIDATION.md"]
+
+robot_pouring = ["references/*.json", "references/*.txt", "LICENSE.reference", "requirements*.txt", "README.md", "METHOD.md", "VALIDATION.md"]

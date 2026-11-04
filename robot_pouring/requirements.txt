@@ -1,0 +1,9 @@
+torch==2.4.0
+numpy==1.26.4
+scipy==1.14.0
+Pillow==10.4.0
+cloudpickle>=3.0,<4
+typing-extensions>=4.8
+fsspec>=2024.6
+importlib-resources>=6
+zipp>=3.20

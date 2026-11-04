@@ -1,0 +1,20 @@
+{
+  "robot_backend": {
+    "name": "MuJoCo Warp",
+    "url": "https://github.com/google-deepmind/mujoco_warp",
+    "version": "0.0.2"
+  },
+  "robot_assets": "panda_assets.json",
+  "fonts": "fonts.json",
+  "fluid_algorithm": {
+    "title": "Position Based Fluids",
+    "authors": [
+      "Miles Macklin",
+      "Matthias Mueller"
+    ],
+    "url": "https://mmacklin.com/pbf_sig_preprint.pdf",
+    "implementation": "Independent Warp PBF with unilateral density projection and explicit cup coupling"
+  },
+  "rendering": "Blender 4.2.9 Cycles; recorded articulated poses and reconstructed water surfaces",
+  "controller": "Feedback reference controller, not a learned RL policy"
+}

@@ -17,6 +17,7 @@ excluded from Git. Set `PHYSSTUDIO_DATA_ROOT` to use another storage location.
 | Potted Plant, Ficus, Alocasia | [DiffWind models](https://github.com/zju3dv/DiffWind/tree/a47530ec2fafd6f647c87a8f8e086b1905dbfe52/assets) · [source configurations](https://github.com/zju3dv/DiffWind/tree/a47530ec2fafd6f647c87a8f8e086b1905dbfe52/configs) | Plant wilting |
 | Orchard scans | [Apple](https://polyhaven.com/a/food_apple_01), [leaf](https://polyhaven.com/a/dry_quiver_leaf), [bowl](https://polyhaven.com/a/wooden_bowl_02) · CC0 | Capillary Contact |
 | Stanford Bunny | [Stanford scan](https://graphics.stanford.edu/data/3Dscanrep/) · [Open3D mirror](https://github.com/isl-org/open3d_downloads/releases/download/20220201-data/BunnyMesh.ply) | Ice Melting |
+| Franka Panda and Google Sans | [Pinned Menagerie model](https://github.com/google-deepmind/mujoco_menagerie/tree/98a70c569c4c1b6da467a20012f766ee1f8dc521/franka_emika_panda) · [Google Sans](https://github.com/googlefonts/googlesans) | Robot Pouring |
 | Calico Basin | [SuperSplat model](https://superspl.at/scene/5d517144), tosolini · CC BY 4.0 | Lava, storms |
 
 ```bash
@@ -35,6 +36,7 @@ python -m physstudio fetch alocasia
 python -m physstudio fetch orchard
 python -m physstudio fetch bunny
 python -m physstudio fetch bonsai
+python -m physstudio fetch robot_pouring
 # Or download all listed assets:
 python -m physstudio fetch all
 ```
@@ -106,3 +108,11 @@ lighting and optical materials procedurally. No asset download is required.
 The three showcase videos render recorded Warp simulations with Blender Cycles;
 the authors' source, paper PDF and reference videos are not bundled.
 [Run guide](melp_thin_film/README.md) · [Sources](melp_thin_film/references/sources.json).
+
+Robot Pouring downloads the 70 required Panda model files at a pinned Menagerie
+revision, plus Google Sans Regular/Bold and its OFL notice. Every file is checked
+against a bundled SHA256 manifest. The model XML and meshes remain unmodified
+in `data/robot_pouring/franka_emika_panda/`; fonts live in
+`data/robot_pouring/fonts/`. Both respect `PHYSSTUDIO_DATA_ROOT`. Cup, vessels,
+plant and studio geometry are procedural. [Asset pins](robot_pouring/references/panda_assets.json) ·
+[Font pins](robot_pouring/references/fonts.json).

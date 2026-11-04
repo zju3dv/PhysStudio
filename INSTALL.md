@@ -196,3 +196,21 @@ The three presets are procedural. `--frames` records a shorter prefix at full
 particle resolution and unchanged physics/camera timing, with at least two
 saved states. The pipeline includes MLS surface reconstruction, mesh checks,
 and 30 fps encoding. [Run guide and replay](melp_thin_film/README.md).
+
+Robot Pouring uses an isolated MuJoCo Warp / Warp 1.10.1 runtime and the shared
+Torch, NumPy, SciPy and Pillow packages:
+
+```bash
+python -m pip install -r robot_pouring/requirements.txt
+python -m robot_pouring.runtime
+python -m physstudio fetch robot_pouring
+export BLENDER=/path/to/blender
+python -m physstudio run robot_pouring basin --gpu 0
+```
+
+The installer writes to `.cache/robot_pouring/runtime/`; other methods retain
+Warp 1.6.2. Use a fresh Python process when switching Warp runtimes. The batched
+Torch and Gymnasium APIs, PPO commands, environment variables and staged replay
+are in [Robot Pouring](robot_pouring/README.md). `--frames` saves a shorter prefix
+at full 2,272-particle resolution and unchanged 25 Hz controls, including frame
+zero. The three videos use the reference controller.

@@ -1,0 +1,9 @@
+mujoco==3.3.7
+mujoco-warp==0.0.2
+warp-lang==1.10.1
+gymnasium==1.2.3
+PyOpenGL==3.1.10
+glfw==2.10.0
+etils==1.13.0
+Farama-Notifications==0.0.4
+absl-py==2.3.1

@@ -1,0 +1,22 @@
+{
+  "family": "Google Sans",
+  "license": "OFL-1.1",
+  "copyright": "Copyright 2025 The Google Sans Project Authors (https://github.com/googlefonts/googlesans)",
+  "files": [
+    {
+      "file": "GoogleSans-400.ttf",
+      "url": "https://fonts.gstatic.com/s/googlesans/v76/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIKli.ttf",
+      "sha256": "76c68aca8b2191521031d36621b19380cd248b614aff5b75984c2158cd251b6a"
+    },
+    {
+      "file": "GoogleSans-700.ttf",
+      "url": "https://fonts.gstatic.com/s/googlesans/v76/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrzjJ6li.ttf",
+      "sha256": "68092940b2cfa0ced959ee66fba3a24247f9b28f6c308b920e8744e4380ddd77"
+    },
+    {
+      "file": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/googlesans/OFL.txt",
+      "sha256": "2b75ef20f13d83a7514aee452c4782c20cdc9ff2dee17600f44d37a06d4fb958"
+    }
+  ]
+}

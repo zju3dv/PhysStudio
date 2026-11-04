@@ -22,9 +22,10 @@ listed in [INSTALL.md](INSTALL.md).
 | Windy Trees | All three growth/wind/render pipelines; implicit mechanics, damping, air feedback, dense paths, and frozen-state rendering |
 | Magnetic Rigid Bodies | Three public pipelines, magnetic/contact checks, full audits and frozen-state rendering |
 | Thin-Film Bubbles | Three public pipelines, conservative transfers, implicit operators, continuous contact, full audits and frozen-state rendering |
-| Launcher | All 57 presets; existing 54 command plans unchanged by the thin-film addition |
+| Robot Pouring | CPU MuJoCo parity, liquid/load balance, independent resets, Gymnasium API, three public pipelines and frozen-state rendering |
+| Launcher | All 60 presets; existing 57 command plans unchanged by the Robot Pouring addition |
 | Downloads | ZIP extraction, CRC-checked cache, destination confinement; SuperSplat manifest, conversion, and camera setup |
-| Media | All 58 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
+| Media | All 61 MP4s decoded; preview files and hashes verified; MeGAS full-frame looping preview |
 | Package | Wheel includes all method modules, reference attribution, and Plant Wilting, Ice Melting, and Fire-X GS runtime/download metadata |
 | Source | Python syntax, English text, portable paths, local documentation links |
 
@@ -172,3 +173,16 @@ the solver, reconstruction, renderer, harness, checks, guides and references.
 Existing 54 command plans, 55 media records and 21 showcase sections are
 preserved. See [method validation](melp_thin_film/VALIDATION.md) for measurements
 and the intact-film collision scope.
+
+Robot Pouring passes 14 physical/API checks in its isolated MuJoCo Warp runtime.
+All three public pipelines complete three saved frames at 2,272 particles,
+including fluid surfaces, Blender rendering and encoded telemetry. Their
+particle and joint-position prefixes match the accepted recordings exactly;
+joint velocities differ by at most 2.99e-8 rad/s. Nine full-resolution frozen
+renders differ by at most one 8-bit channel level (mean below 0.000047).
+Render resumes preserve PNGs and reject changed settings. A 128-transition
+PPO check updates and reloads a policy; task convergence is not established.
+The wheel includes all 26 method files, notices and asset pins; installed-wheel
+imports pass, and the existing 315 package files remain unchanged except for
+the separately updated launcher. The three showcase MP4s retain the reviewed
+Google Sans typography and exact video hashes. [Method validation](robot_pouring/VALIDATION.md).

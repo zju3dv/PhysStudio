@@ -14,7 +14,7 @@
 [Gaussian Splashing](#gaussian-splashing) · [Water + Sand](#water-sand) · [EnliveningGS](#enliveninggs) · [Magnetic MPM](#magnetic-mpm)<br>
 [Capillary Contact](#capillary-contact) · [Ice Melting](#ice-melting) · [Fire-X GS](#fire-x-gs) · [Multi-fluid](#multi-fluid)<br>
 [Ice Solidification](#ice-solidification) · [Tree & Root Growth](#rhizomorph) · [Windy Trees](#windy-trees)<br>
-[Magnetic Rigid Bodies](#magnetic-rigid-bodies) · [Thin-Film Bubbles](#thin-film-bubbles)
+[Magnetic Rigid Bodies](#magnetic-rigid-bodies) · [Thin-Film Bubbles](#thin-film-bubbles) · [Robot Pouring](#robot-pouring)
 
 [**Get started**](INSTALL.md) &nbsp; / &nbsp; [**Download assets**](ASSETS.md) &nbsp; / &nbsp; [**Video gallery**](media/index.html)
 
@@ -377,6 +377,22 @@ Water + Sand combines [Volume-Preserving LBM-MPM Coupling for Air-Water-Sand Mix
 
 ---
 
+<a id="robot-pouring"></a>
+
+## <img src="media/project-icons/robot-pouring.svg" width="32" height="32" align="absmiddle" alt=""> Robot Pouring
+
+[MuJoCo Warp](https://mujoco.readthedocs.io/en/stable/mjwarp/index.html) and a Warp liquid solver power batched reinforcement-learning environments for a Franka Panda, from basin transfers and narrow-vessel pouring to controlled plant watering.
+
+<table><tr>
+  <td align="center" valign="top" width="33%"><a href="media/robot_pouring/flower.mp4"><img src="media/robot_pouring/flower.gif" width="360" alt="Gentle Watering"></a><br><b>Gentle Watering</b></td>
+  <td align="center" valign="top" width="33%"><a href="media/robot_pouring/basin.mp4"><img src="media/robot_pouring/basin.gif" width="360" alt="Basin Transfer"></a><br><b>Basin Transfer</b></td>
+  <td align="center" valign="top" width="33%"><a href="media/robot_pouring/precision.mp4"><img src="media/robot_pouring/precision.gif" width="360" alt="Precision Pour"></a><br><b>Precision Pour</b></td>
+</tr></table>
+
+[**Code & run guide →**](robot_pouring/README.md)
+
+---
+
 ## Run a demo
 
 See [installation](INSTALL.md) for the CUDA environment, then:
@@ -414,6 +430,7 @@ rhizomorph/           Coupled soil resources, root growth, and branching crowns
 windy_trees/          Two-way SPH wind, elastic branches, and air-particle paths
 magnetic_rigid/       Coupled rigid contact, dipole fields, and induced magnetization
 melp_thin_film/       Moving thin films, capillary recoil, and bubble contact
+robot_pouring/       Batched Panda manipulation, Warp liquids, and RL interfaces
 physstudio/           Shared launcher, paths, and download utilities
 media/                Demo videos, animated previews, and an HTML gallery
 ```
